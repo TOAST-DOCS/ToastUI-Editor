@@ -1,7 +1,7 @@
 ## Open Source > ToastUI Editor > Overview
 
-![toast ui editor](http://static.toastoven.net/prod_opensource/tui_editor/t1.png)
-<br>
+![toast ui editor](https://cloud.githubusercontent.com/assets/7088720/21300635/f64a1bd0-c5e8-11e6-8583-fbb8e6899b2f.png)
+===============
 The ToastUI Editor is a two-way editor based on Markdown.
 You can choose and use WYSIWYG and Markdown as needed.
 And if you are in need, you can switch the editing mode (WYSIWYG ↔ Markdown) while you are writing it fluidly.
