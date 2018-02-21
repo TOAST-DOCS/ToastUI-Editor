@@ -1,4 +1,4 @@
-## Open Source > ToastUI Editor > Getting Started
+## Open Source > ToastUI Editor > Open source Guide
 
 You should load all JavaScript dependencies and CSS files in order to use TUI Editor.
 
