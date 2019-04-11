@@ -16,7 +16,7 @@ And if you are in need, you can switch the editing mode (WYSIWYG ↔ Markdown) w
 
 ## DEMO
 
-You can try a demo at [nhnent.github.io/tui.editor](http://nhnent.github.io/tui.editor/)
+You can try a demo at [nhn.github.io/tui.editor](http://nhn.github.io/tui.editor/)
 
 ## Screenshots
 
@@ -27,8 +27,8 @@ You can try a demo at [nhnent.github.io/tui.editor](http://nhnent.github.io/tui.
 ![WYsiwyg Mode](http://static.toastoven.net/prod_opensource/tui_editor/t3.png)
 
 ## Documentation
-* **Getting Started** : https://github.com/nhnent/tui.editor/wiki/Getting-Started
-* **API** : https://nhnent.github.io/tui.editor/api/latest
+* **Getting Started** : https://github.com/nhn/tui.editor/wiki/Getting-Started
+* **API** : https://nhn.github.io/tui.editor/api/latest
 
 ## Dependency
 * codemirror ~1.0.4
@@ -47,10 +47,10 @@ You can try a demo at [nhnent.github.io/tui.editor](http://nhnent.github.io/tui.
 
 ## Download/Install
 * Bower
-   * Latest version: bower install git@github.com:nhnent/tui-editor.git
-   * Specific version: bower install git@github.com:nhnent/tui-editor.git#[tagName]
+   * Latest version: bower install git@github.com:nhn/tui-editor.git
+   * Specific version: bower install git@github.com:nhn/tui-editor.git#[tagName]
 * Download
-   * https://github.com/nhnent/tui.editor/tree/master/dist
+   * https://github.com/nhn/tui.editor/tree/master/dist
 
 ## License
-This software is licensed under the [MIT License](https://github.com/nhnent/tui.editor/blob/master/LICENSE).
+This software is licensed under the [MIT License](https://github.com/nhn/tui.editor/blob/master/LICENSE).
