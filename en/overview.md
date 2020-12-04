@@ -1,6 +1,15 @@
 ## Open Source > ToastUI Editor > 개요
 
-![TOAST UI Editor](https://uicdn.toast.com/toastui/img/tui-editor-bi.png)
+# TOAST UI Editor v3 major update planning🏃🏃🏃
+
+TOAST UI Editor is planning a **v3 major update for 2021**. You can see our detail **RoadMap [here](https://github.com/nhn/tui.editor/issues/1253)!**
+
+<br>
+<br>
+
+# ![TOAST UI Editor](https://uicdn.toast.com/toastui/img/tui-editor-bi.png)
+
+> GFM Markdown and WYSIWYG Editor - Productive and Extensible
 
 <img src="https://user-images.githubusercontent.com/18183560/84614193-59392700-af00-11ea-9a55-4a90a6ab5fe8.gif" />
 
@@ -99,7 +108,7 @@ Here are more [examples](https://nhn.github.io/tui.editor/latest/tutorial-exampl
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |                                                                               Yes                                                                                |                                                                                   10+                                                                                   |                                                                             Yes                                                                              |                                                                               Yes                                                                                |                                                                                Yes                                                                                 |
 
-## 🔧 Pull Request Steps
+## Pull Request Steps
 
 TOAST UI products are open source, so you can create a pull request(PR) after you fix issues. Run npm scripts and develop yourself with the following process.
 
