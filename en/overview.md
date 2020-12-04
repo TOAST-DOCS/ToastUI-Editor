@@ -1,27 +1,10 @@
 ## Open Source > ToastUI Editor > 개요
 
-# ![TOAST UI Editor](https://uicdn.toast.com/toastui/img/tui-editor-bi.png)
-
-> GFM Markdown and WYSIWYG Editor - Productive and Extensible
-
-[![github release version](https://img.shields.io/github/v/release/nhn/tui.editor.svg?include_prereleases)](https://github.com/nhn/tui.editor/releases/latest) [![npm version](https://img.shields.io/npm/v/@toast-ui/editor.svg)](https://www.npmjs.com/package/@toast-ui/editor) [![license](https://img.shields.io/github/license/nhn/tui.editor.svg)](https://github.com/nhn/tui.editor/blob/master/LICENSE) [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/nhn/tui.editor/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) [![code with hearth by NHN](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-NHN-ff1414.svg)](https://github.com/nhn)
+![TOAST UI Editor](https://uicdn.toast.com/toastui/img/tui-editor-bi.png)
 
 <img src="https://user-images.githubusercontent.com/18183560/84614193-59392700-af00-11ea-9a55-4a90a6ab5fe8.gif" />
 
-## 🚩 Table of Contents
-
-- [Packages](#-packages)
-- [Why TOAST UI Editor?](#-why-toast-ui-editor)
-- [Features](#-features)
-- [Examples](#-examples)
-- [Browser Support](#-browser-support)
-- [Pull Request Steps](#-pull-request-steps)
-- [Contributing](#-contributing)
-- [TOAST UI Family](#-toast-ui-family)
-- [Used By](#-used-by)
-- [License](#-license)
-
-## 📦 Packages
+## Packages
 
 ### TOAST UI Editor
 
@@ -47,7 +30,7 @@
 | [`@toast-ui/editor-plugin-table-merged-cell`](https://github.com/nhn/tui.editor/tree/master/plugins/table-merged-cell)         | Plugin to merge table columns   |
 | [`@toast-ui/editor-plugin-uml`](https://github.com/nhn/tui.editor/tree/master/plugins/uml)                                     | Plugin to render UML            |
 
-## 🤖 Why TOAST UI Editor?
+## Why TOAST UI Editor?
 
 TOAST UI Editor provides **Markdown mode** and **WYSIWYG mode**. Depending on the type of use you want like production of _Markdown_ or maybe to just edit the _Markdown_. The TOAST UI Editor can be helpful for both the usage. It offers **Markdown mode** and **WYSIWYG mode**, which can be switched any point in time.
 
@@ -94,12 +77,12 @@ CommonMark and GFM are great, but we often need more abstraction. The TOAST UI E
   You can merge columns of the table header and body area.
 - [**`uml`**](https://github.com/nhn/tui.editor/tree/master/plugins/uml) : A code block marked as an 'uml' will render [UML diagrams](http://plantuml.com/screenshot).
 
-## 🎨 Features
+## Features
 
 - [**Viewer**](https://github.com/nhn/tui.editor/tree/master/apps/editor/docs/viewer.md) : Supports a mode to display only markdown data without an editing area.
 - [**Internationalization (i18n)**](https://github.com/nhn/tui.editor/tree/master/apps/editor/docs/i18n.md) : Supports English, Dutch, Korean, Japanese, Chinese, Spanish, German, Russian, French, Ukrainian, Turkish, Finnish, Czech, Arabic, Polish, Galician, Swedish, Italian, Norwegian, Croatian, Portuguese + language and you can extend.
 
-## 🐾 Examples
+## Examples
 
 - [Basic](https://nhn.github.io/tui.editor/latest/tutorial-example01-editor-basic)
 - [Viewer](https://nhn.github.io/tui.editor/latest/tutorial-example04-viewer)
@@ -110,7 +93,7 @@ CommonMark and GFM are great, but we often need more abstraction. The TOAST UI E
 
 Here are more [examples](https://nhn.github.io/tui.editor/latest/tutorial-example01-editor-basic) and play with TOAST UI Editor!
 
-## 🌏 Browser Support
+## Browser Support
 
 | <img src="https://user-images.githubusercontent.com/1215767/34348387-a2e64588-ea4d-11e7-8267-a43365103afe.png" alt="Chrome" width="16px" height="16px" /> Chrome | <img src="https://user-images.githubusercontent.com/1215767/34348590-250b3ca2-ea4f-11e7-9efb-da953359321f.png" alt="IE" width="16px" height="16px" /> Internet Explorer | <img src="https://user-images.githubusercontent.com/1215767/34348380-93e77ae8-ea4d-11e7-8696-9a989ddbbbf5.png" alt="Edge" width="16px" height="16px" /> Edge | <img src="https://user-images.githubusercontent.com/1215767/34348394-a981f892-ea4d-11e7-9156-d128d58386b9.png" alt="Safari" width="16px" height="16px" /> Safari | <img src="https://user-images.githubusercontent.com/1215767/34348383-9e7ed492-ea4d-11e7-910c-03b39d52f496.png" alt="Firefox" width="16px" height="16px" /> Firefox |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -156,14 +139,14 @@ Before creating a PR, test and check for any errors. If there are no errors, the
 
 For more information, please refer to the Contributing section.
 
-## 💬 Contributing
+## Contributing
 
 - [Code of Conduct](https://github.com/nhn/tui.editor/blob/master/CODE_OF_CONDUCT.md)
 - [Contributing Guideline](https://github.com/nhn/tui.editor/blob/master/CONTRIBUTING.md)
 - [Commit Convention](https://github.com/nhn/tui.editor/blob/master/docs/COMMIT_MESSAGE_CONVENTION.md)
 - [Issue Guidelines](https://github.com/nhn/tui.editor/tree/master/.github/ISSUE_TEMPLATE)
 
-## 🍞 TOAST UI Family
+## TOAST UI Family
 
 - [TOAST UI Calendar](https://github.com/nhn/tui.calendar)
 - [TOAST UI Chart](https://github.com/nhn/tui.chart)
@@ -171,11 +154,11 @@ For more information, please refer to the Contributing section.
 - [TOAST UI Image Editor](https://github.com/nhn/tui.image-editor)
 - [TOAST UI Components](https://github.com/nhn)
 
-## 🚀 Used By
+## Used By
 
 - [TOAST Dooray! - Collaboration Service (Project, Messenger, Mail, Calendar, Drive, Wiki, Contacts)](https://dooray.com)
 - [UNOTES - Visual Studio Code Extension](https://marketplace.visualstudio.com/items?itemName=ryanmcalister.Unotes)
 
-## 📜 License
+## License
 
 This software is licensed under the [MIT](https://github.com/nhn/tui.editor/blob/master/LICENSE) © [NHN](https://github.com/nhn).
