@@ -1,4 +1,4 @@
-## Open Source > ToastUI Editor > 개요
+## Open Source > NHN CloudUI Editor > 개요
 
 ![toast ui editor](https://cloud.githubusercontent.com/assets/7088720/21300635/f64a1bd0-c5e8-11e6-8583-fbb8e6899b2f.png)
 ===============
