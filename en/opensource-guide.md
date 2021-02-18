@@ -1,8 +1,8 @@
-## Open Source > ToastUI Editor > 오픈 소스 사용 가이드
+## Open Source > NHN Cloud UI Editor > 오픈 소스 사용 가이드
 
 ## The Project Setup
 
-TOAST UI Editor can be used by using the package manager or downloading the source directly. However, we highly recommend using the package manager.
+NHN Cloud UI Editor can be used by using the package manager or downloading the source directly. However, we highly recommend using the package manager.
 
 ### Via Package Manager (npm)
 
@@ -28,7 +28,7 @@ When installed and used with npm, the list of files that can be imported is as f
 
 ### Via Contents Delivery Network (CDN)
 
-TOAST UI Editor is available over the CDN powered by [TOAST Cloud](https://www.toast.com). You can use the CDN as below.
+NHN Cloud UI Editor is available over the CDN powered by [NHN Cloud Cloud](https://www.toast.com). You can use the CDN as below.
 
 ```html
 ...
@@ -63,7 +63,7 @@ The CDN directory has the following structure:
 
 ### Adding the Wrapper Element
 
-You need to add the container element where TOAST UI Editor (henceforth referred to as 'Editor') will be created.
+You need to add the container element where NHN Cloud UI Editor (henceforth referred to as 'Editor') will be created.
 
 ```html
 ...

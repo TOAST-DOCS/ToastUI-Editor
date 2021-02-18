@@ -1,13 +1,13 @@
-## Open Source > ToastUI Editor > 개요
+## Open Source > NHN Cloud UI Editor > 개요
 
-## TOAST UI Editor v3 major update planning
+## NHN Cloud UI Editor v3 major update planning
 
-TOAST UI Editor is planning a **v3 major update for 2021**. You can see our detail **RoadMap [here](https://github.com/nhn/tui.editor/issues/1253)!**
+NHN Cloud UI Editor is planning a **v3 major update for 2021**. You can see our detail **RoadMap [here](https://github.com/nhn/tui.editor/issues/1253)!**
 
 <br>
 <br>
 
-![TOAST UI Editor](https://uicdn.toast.com/toastui/img/tui-editor-bi.png)
+![NHN Cloud UI Editor](https://uicdn.toast.com/toastui/img/tui-editor-bi.png)
 
 GFM Markdown and WYSIWYG Editor - Productive and Extensible
 
@@ -15,13 +15,13 @@ GFM Markdown and WYSIWYG Editor - Productive and Extensible
 
 ## Packages
 
-### TOAST UI Editor
+### NHN Cloud UI Editor
 
 | Name                                                                            | Description                |
 | ------------------------------------------------------------------------------- | -------------------------- |
 | [`@toast-ui/editor`](https://github.com/nhn/tui.editor/tree/master/apps/editor) | Plain JavaScript component |
 
-### TOAST UI Editor's Wrappers
+### NHN Cloud UI Editor's Wrappers
 
 | Name                                                                                          | Description                                     |
 | --------------------------------------------------------------------------------------------- | ----------------------------------------------- |
@@ -29,7 +29,7 @@ GFM Markdown and WYSIWYG Editor - Productive and Extensible
 | [`@toast-ui/react-editor`](https://github.com/nhn/tui.editor/tree/master/apps/react-editor)   | [React](https://reactjs.org/) wrapper component |
 | [`@toast-ui/vue-editor`](https://github.com/nhn/tui.editor/tree/master/apps/vue-editor)       | [Vue](https://vuejs.org/) wrapper component     |
 
-### TOAST UI Editor's Plugins
+### NHN Cloud UI Editor's Plugins
 
 | Name                                                                                                                           | Description                     |
 | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------- |
@@ -39,9 +39,9 @@ GFM Markdown and WYSIWYG Editor - Productive and Extensible
 | [`@toast-ui/editor-plugin-table-merged-cell`](https://github.com/nhn/tui.editor/tree/master/plugins/table-merged-cell)         | Plugin to merge table columns   |
 | [`@toast-ui/editor-plugin-uml`](https://github.com/nhn/tui.editor/tree/master/plugins/uml)                                     | Plugin to render UML            |
 
-## Why TOAST UI Editor?
+## Why NHN Cloud UI Editor?
 
-TOAST UI Editor provides **Markdown mode** and **WYSIWYG mode**. Depending on the type of use you want like production of _Markdown_ or maybe to just edit the _Markdown_. The TOAST UI Editor can be helpful for both the usage. It offers **Markdown mode** and **WYSIWYG mode**, which can be switched any point in time.
+NHN Cloud UI Editor provides **Markdown mode** and **WYSIWYG mode**. Depending on the type of use you want like production of _Markdown_ or maybe to just edit the _Markdown_. The NHN Cloud UI Editor can be helpful for both the usage. It offers **Markdown mode** and **WYSIWYG mode**, which can be switched any point in time.
 
 ### Productive Markdown Mode
 
@@ -49,7 +49,7 @@ TOAST UI Editor provides **Markdown mode** and **WYSIWYG mode**. Depending on th
 
 **CommonMark + GFM Specifications**
 
-Today _CommonMark_ is the de-facto _Markdown_ standard. _GFM (GitHub Flavored Markdown)_ is another popular specification based on _CommonMark_ - maintained by _GitHub_, which is the _Markdown_ mostly used. TOAST UI Editor follows both [_CommonMark_](http://commonmark.org/) and [_GFM_](https://github.github.com/gfm/) specifications. Write documents with ease using productive tools provided by TOAST UI Editor and you can easily open the produced document wherever the specifications are supported.
+Today _CommonMark_ is the de-facto _Markdown_ standard. _GFM (GitHub Flavored Markdown)_ is another popular specification based on _CommonMark_ - maintained by _GitHub_, which is the _Markdown_ mostly used. NHN Cloud UI Editor follows both [_CommonMark_](http://commonmark.org/) and [_GFM_](https://github.github.com/gfm/) specifications. Write documents with ease using productive tools provided by NHN Cloud UI Editor and you can easily open the produced document wherever the specifications are supported.
 
 - **Live Preview** : Edit Markdown while keeping an eye on the rendered HTML. Your edits will be applied immediately.
 - **Scroll Sync** : Synchronous scrolling between Markdown and Preview. You don't need to scroll through each one separately.
@@ -74,14 +74,14 @@ Today _CommonMark_ is the de-facto _Markdown_ standard. _GFM (GitHub Flavored Ma
 
 ![plugin](https://user-images.githubusercontent.com/18183560/84381966-cf9a0880-ac24-11ea-9bb4-1e8a8ca186de.png)
 
-CommonMark and GFM are great, but we often need more abstraction. The TOAST UI Editor comes with powerful **Plugins** in compliance with the Markdown syntax.
+CommonMark and GFM are great, but we often need more abstraction. The NHN Cloud UI Editor comes with powerful **Plugins** in compliance with the Markdown syntax.
 
 **Five basic plugins** are provided as follows, and can be downloaded and used with npm.
 
-- [**`chart`**](https://github.com/nhn/tui.editor/tree/master/plugins/chart) : A code block marked as a 'chart' will render [TOAST UI Chart](https://github.com/nhn/tui.chart).
+- [**`chart`**](https://github.com/nhn/tui.editor/tree/master/plugins/chart) : A code block marked as a 'chart' will render [NHN Cloud UI Chart](https://github.com/nhn/tui.chart).
 - [**`code-syntax-highlight`**](https://github.com/nhn/tui.editor/tree/master/plugins/code-syntax-highlight) : Highlight the code block area corresponding to the language provided by [highlight.js](https://highlightjs.org/).
 - [**`color-syntax`**](https://github.com/nhn/tui.editor/tree/master/plugins/color-syntax) :
-  Using [TOAST UI ColorPicker](https://github.com/nhn/tui.color-picker), you can change the color of the editing text with the GUI.
+  Using [NHN Cloud UI ColorPicker](https://github.com/nhn/tui.color-picker), you can change the color of the editing text with the GUI.
 - [**`table-merged-cell`**](https://github.com/nhn/tui.editor/tree/master/plugins/table-merged-cell) :
   You can merge columns of the table header and body area.
 - [**`uml`**](https://github.com/nhn/tui.editor/tree/master/plugins/uml) : A code block marked as an 'uml' will render [UML diagrams](http://plantuml.com/screenshot).
@@ -100,7 +100,7 @@ CommonMark and GFM are great, but we often need more abstraction. The TOAST UI E
 - [Customizing the Toobar Buttons](https://nhn.github.io/tui.editor/latest/tutorial-example19-customizing-toolbar-buttons)
 - [Internationalization (i18n)](https://nhn.github.io/tui.editor/latest/tutorial-example20-i18n)
 
-Here are more [examples](https://nhn.github.io/tui.editor/latest/tutorial-example01-editor-basic) and play with TOAST UI Editor!
+Here are more [examples](https://nhn.github.io/tui.editor/latest/tutorial-example01-editor-basic) and play with NHN Cloud UI Editor!
 
 ## Browser Support
 
@@ -110,7 +110,7 @@ Here are more [examples](https://nhn.github.io/tui.editor/latest/tutorial-exampl
 
 ## Pull Request Steps
 
-TOAST UI products are open source, so you can create a pull request(PR) after you fix issues. Run npm scripts and develop yourself with the following process.
+NHN Cloud UI products are open source, so you can create a pull request(PR) after you fix issues. Run npm scripts and develop yourself with the following process.
 
 ### Setup
 
@@ -155,17 +155,17 @@ For more information, please refer to the Contributing section.
 - [Commit Convention](https://github.com/nhn/tui.editor/blob/master/docs/COMMIT_MESSAGE_CONVENTION.md)
 - [Issue Guidelines](https://github.com/nhn/tui.editor/tree/master/.github/ISSUE_TEMPLATE)
 
-## TOAST UI Family
+## NHN Cloud UI Family
 
-- [TOAST UI Calendar](https://github.com/nhn/tui.calendar)
-- [TOAST UI Chart](https://github.com/nhn/tui.chart)
-- [TOAST UI Grid](https://github.com/nhn/tui.grid)
-- [TOAST UI Image Editor](https://github.com/nhn/tui.image-editor)
-- [TOAST UI Components](https://github.com/nhn)
+- [NHN Cloud UI Calendar](https://github.com/nhn/tui.calendar)
+- [NHN Cloud UI Chart](https://github.com/nhn/tui.chart)
+- [NHN Cloud UI Grid](https://github.com/nhn/tui.grid)
+- [NHN Cloud UI Image Editor](https://github.com/nhn/tui.image-editor)
+- [NHN Cloud UI Components](https://github.com/nhn)
 
 ## Used By
 
-- [TOAST Dooray! - Collaboration Service (Project, Messenger, Mail, Calendar, Drive, Wiki, Contacts)](https://dooray.com)
+- [NHN Cloud Dooray! - Collaboration Service (Project, Messenger, Mail, Calendar, Drive, Wiki, Contacts)](https://dooray.com)
 - [UNOTES - Visual Studio Code Extension](https://marketplace.visualstudio.com/items?itemName=ryanmcalister.Unotes)
 
 ## License
