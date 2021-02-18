@@ -1,4 +1,4 @@
-## Open Source > NHN Cloud UI Editor > 오픈 소스 사용 가이드
+## Open Source > NHN CloudUI Editor > 오픈 소스 사용 가이드
 
 You should load all JavaScript dependencies and CSS files in order to use TUI Editor.
 
