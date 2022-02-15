@@ -1,160 +1,177 @@
-## Open Source > ToastUI Editor > Open Source Guide
+## Open Source > NHN Cloud UI Editor > 오픈 소스 사용 가이드
 
-You should load all JavaScript dependencies and CSS files in order to use TUI Editor.
+## The Project Setup
 
-javascript files
+NHN Cloud UI Editor can be used by using the package manager or downloading the source directly. However, we highly recommend using the package manager.
 
-- jquery/dist/jquery.js
-- tui-code-snippet/code-snippet.js
-- marked/lib/marked.js
-- toMark/dist/toMark.js
-- codemirror/lib/codemirror.js
-- highlightjs/highlight.pack.js
-- squire-rte/build/squire.js
-- tui-editor/dist/tui-editor.min.js
+### Via Package Manager (npm)
 
-css files
+You can conveniently install it using the commands provided by each package manager. When using npm, be sure to use it in the environment [Node.js](https://nodejs.org/en/) is installed.
 
-- codemirror/lib/codemirror.css
-- highlightjs/styles/github.css
-- tui-editor/dist/tui-editor.css
-- tui-editor/dist/tui-editor-contents.css
-
-_tui-editor.contents.css_ defines content's displaying style that in WYSIWYG Editor and Markdown Preview.
-You can customize editor content's displaying style through modifying _tui-editor.contents.css_ file.
-
-``` html
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>DEMO</title>
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/tui-code-snippet/code-snippet.js"></script>
-    <script src="bower_components/marked/lib/marked.js"></script>
-    <script src="bower_components/toMark/dist/toMark.js"></script>
-    <script src="bower_components/codemirror/lib/codemirror.js"></script>
-    <script src="bower_components/highlightjs/highlight.pack.js"></script>
-    <script src="bower_components/Squire/build/squire-raw.js"></script>
-    <script src="bower_components/tui-editor/dist/tui-editor.min.js"></script>
-    <link rel="stylesheet" href="bower_components/codemirror/lib/codemirror.css">
-    <link rel="stylesheet" href="bower_components/highlightjs/styles/github.css">
-    <link rel="stylesheet" href="bower_components/tui-editor/dist/tui-editor.css">
-    <link rel="stylesheet" href="bower_components/tui-editor/dist/tui-editor-contents.css">
-</head>
-<body>
-<div id="editSection"></div>
-<script>
-    $('#editSection').tuiEditor({
-        initialEditType: 'markdown',
-        previewStyle: 'vertical',
-        height: 300
-    });
-</script>
-</body>
-</html>
+```sh
+$ npm install --save @toast-ui/editor # Latest Version
+$ npm install --save @toast-ui/editor@<version> # Specific Version
 ```
 
-Create TUI Editor instance with jQuery plugin style way or call tui.Editor.factory() method in our _tui.Editor_ namespace.
+When installed and used with npm, the list of files that can be imported is as follows:
 
-``` javascript
-var editor = tui.Editor.factory({
-    el: $('#editSection'),
-    initialEditType: 'markdown',
-    previewStyle: 'vertical',
-    height: 300
+```
+- node_modules/
+   ├─ @toast-ui/editor/
+   │     ├─ dist/
+   │     │    ├─ toastui-editor.js
+   │     │    ├─ toastui-editor-viewer.js
+   │     │    ├─ toastui-editor.css
+   │     │    ├─ toastui-editor-viewer.css
+   │     │    └─ toastui-editor-only.css
+```
+
+### Via Contents Delivery Network (CDN)
+
+NHN Cloud UI Editor is available over the CDN powered by [NHN Cloud Cloud](https://www.toast.com). You can use the CDN as below.
+
+```html
+...
+<body>
+  ...
+  <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+</body>
+...
+```
+
+If you want to use a specific version, use the tag name instead of `latest` in the url's path.
+
+The CDN directory has the following structure:
+
+```
+- uicdn.toast.com/
+   ├─ editor/
+   │     ├─ latest/
+   │     │    ├─ toastui-editor-all.js
+   │     │    ├─ toastui-editor-all.min.js
+   │     │    ├─ toastui-editor-viewer.js
+   │     │    ├─ toastui-editor-viewer.min.js
+   │     │    ├─ toastui-editor-editor.css
+   │     │    ├─ toastui-editor-editor.min.css
+   │     │    ├─ toastui-editor-viewer.css
+   │     │    └─ toastui-editor-viewer.min.css
+   │     ├─ 2.0.0/
+   │     │    └─ ...
+```
+
+## Create Your First Editor
+
+### Adding the Wrapper Element
+
+You need to add the container element where NHN Cloud UI Editor (henceforth referred to as 'Editor') will be created.
+
+```html
+...
+<body>
+  <div id="editor"></div>
+</body>
+...
+```
+
+### Importing the Editor's Constructor Function
+
+The editor can be used by creating an instance with the constructor function. To get the constructor function, you should import the module using one of the following ways depending on your environment.
+
+#### Using Module Format in Node Environment
+
+- ES6 Modules
+
+```javascript
+import Editor from "@toast-ui/editor";
+```
+
+- CommonJS
+
+```javascript
+const Editor = require("@toast-ui/editor");
+```
+
+#### Using Namespace in Browser Environment
+
+```javascript
+const Editor = toastui.Editor;
+```
+
+### Adding CSS Files
+
+You need to add the CSS files needed for the Editor. Import CSS files in node environment, and add it to html file when using CDN. When using the markdown editor, you need to add a style for the [CodeMirror](https://codemirror.net/).
+
+#### Using in Node Environment
+
+- ES6 Modules
+
+```javascript
+import "codemirror/lib/codemirror.css"; // Editor's Dependency Style
+import "@toast-ui/editor/dist/toastui-editor.css"; // Editor's Style
+```
+
+- CommonJS
+
+```javascript
+require("codemirror/lib/codemirror.css");
+require("@toast-ui/editor/dist/toastui-editor.css");
+```
+
+#### Using in Browser Environment by CDN
+
+```html
+...
+<head>
+  ...
+  <!-- Editor's Dependecy Style -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.min.css"
+  />
+  <!-- Editor's Style -->
+  <link
+    rel="stylesheet"
+    href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css"
+  />
+</head>
+...
+```
+
+### Creating Instance
+
+You can create an instance with options and call various API after creating an instance.
+
+```js
+const editor = new Editor({
+  el: document.querySelector("#editor"),
 });
 ```
 
-## Options
+![getting-started-01](https://user-images.githubusercontent.com/37766175/80378030-074c2b80-88d7-11ea-9ade-ac806f34dc8c.png)
 
-* viewOnly: {boolean}
-    * When passed parameter is true, create editor with view-only mode. And then Editor renders markdown content to HTML.
-* initialEditType: 'markdown' || 'wysiwyg'
-    * Initialize and show editor with editing mode that given option.
-* previewStyle: 'tab' || 'vertical'
-    * In markdown case, define preview pane displaying style that given option.
-* height: {number} || 'auto'
-    * Set fixed height of content area with number type parameter.
-    * Parameter 'auto' means expand editor's height content relatively.
-* events: {object}
-    * Bind event listener to editor's internal event.
-    * You can checkout _Event_ part for details.
-* exts: [string]
-    * Define your extensions with string array.
-    * built-in extensions
-        * scrollFollow: In Markdown Editor, For use preview pane's scroll following related to current editing position.
-        * colorSyntax: For use syntax coloring.
-* hooks: {object}
-    * Register hook functions for bind Editor and your service.
-    * addImageBlobHook : Upload image file to server with file blob. (Base64 encoded)
+```js
+const editor = new Editor({
+  el: document.querySelector("#editor"),
+  height: "600px",
+  initialEditType: "markdown",
+  previewStyle: "vertical",
+});
 
-## Upload image to image server
-You can use _addImageBlobHook_ with file blob for upload image file to image server.
-Checkout some detail for image server for 'Handling the upload process for a file' part [Here](https://developer.mozilla.org/en/docs/Using_files_from_web_applications)
-
-
-``` javascript
-    hooks: {
-        'addImageBlobHook': function(blob, callback) {
-            //run callback
-            //callback('Image URL');
-        }
-    }
+editor.getHtml();
 ```
 
-## API
+![getting-started-02](https://user-images.githubusercontent.com/37766175/80378283-6447e180-88d7-11ea-9684-ce6742053481.png)
 
-``` javascript
-editor.setValue('# Hello');
-editor.on('focus', handler);
-editor.off('focus');
+The basic options available are:
 
-//Using jQuery plugin interface
-$('#editSection').tuiEditor('setValue', '# Hello');
-$('#editSection').tuiEditor('on', 'focus');
-$('#editSection').tuiEditor('off', 'focus');
-```
+- `height`: Height in string or auto ex) `300px` | `auto`
+- `initialEditType`: Initial type to show `markdown` | `wysiwyg`
+- `initialValue`: Initial value. Set Markdown string
+- `previewType`: Preview style of Markdown mode `tab` | `vertical`
+- `usageStatistics`: Let us know the _hostname_. We want to learn from you how you are using the editor. You are free to disable it. `true` | `false`
 
-* focus: set focus into Editor
-* hide: hide Editor from document
-* show: show Editor on document
-* getValue: get Markdown contents to Editor
-* setValue: set Markdown contnets to Editor
-* changeMode: change Editor type WYSIWYG or Makrdown ("wysiwyg", "markdown")
-* contentHeight: set or get Editor's contents area height through with or without parameter
-* moveCursorToEnd: move cursor at end of Editor's content
-* moveCursorToStart: move cursor at start of Editor's content
-* on: bind event handler function to Editor's internal Events
-    * You can bind event handlers like jQuery.on() way, so you can remove particular event handler. (ex. change.dooray)
-* off : remove event handler with namespace
-    * editor.off("change"): remove the "change" event's handlers
-    * editor.off("change.dooray"): remove the "change" event's handlers which has namespace "dooray"
-    * editor.off(".dooray"): remove the event handler which has namespace ".dooray"
-* remove: remove Editor from document
+Find out more options [here](https://nhn.github.io/tui.editor/latest/ToastUIEditor).
 
-## Events
+## Example
 
-* change: invoke when Editor's content changes
-* changeMode: invoke when Editor mode change
-* stateChange: invoke when cursor position changes across state (bold, italic, code, codeBlock, text)
-* keyMap: invoke when Editor's key combination pressed (expected Data be like 'SHIFT+CTRL+A')
-* removeEditor: invoke when Editor's remove() method called
-* click
-* keydown, keyup
-* focus
-* blur
-* show
-* hide
-
-## Applying custom renderer
-
-You can extend _tui.Editor.markedRenderer_ to get your own Markdown to HTML renderer rather use _marked_.
-
-``` javascript
-
-tui.Editor.markedRenderer.table = function() {
-    // your codes here
-}
-
-```
+You can see the example [here](https://nhn.github.io/tui.editor/latest/tutorial-example01-editor-basic).
