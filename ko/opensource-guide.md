@@ -1,8 +1,8 @@
-## Open Source > NHN Cloud UI Editor > 오픈 소스 사용 가이드
+## Open Source > NHN TOAST UI Editor > 오픈 소스 사용 가이드
 
 ## The Project Setup
 
-NHN Cloud UI Editor can be used by using the package manager or downloading the source directly. However, we highly recommend using the package manager.
+NHN TOAST UI Editor can be used by using the package manager or downloading the source directly. However, we highly recommend using the package manager.
 
 ### Via Package Manager (npm)
 
@@ -28,7 +28,7 @@ When installed and used with npm, the list of files that can be imported is as f
 
 ### Via Contents Delivery Network (CDN)
 
-NHN Cloud UI Editor is available over the CDN powered by [NHN Cloud Cloud](https://www.toast.com). You can use the CDN as below.
+NHN TOAST UI Editor is available over the CDN powered by [NHN Cloud Cloud](https://www.toast.com). You can use the CDN as below.
 
 ```html
 ...
@@ -63,7 +63,7 @@ The CDN directory has the following structure:
 
 ### Adding the Wrapper Element
 
-You need to add the container element where NHN Cloud UI Editor (henceforth referred to as 'Editor') will be created.
+You need to add the container element where NHN TOAST UI Editor (henceforth referred to as 'Editor') will be created.
 
 ```html
 ...
@@ -82,13 +82,13 @@ The editor can be used by creating an instance with the constructor function. To
 - ES6 Modules
 
 ```javascript
-import Editor from "@toast-ui/editor";
+import Editor from '@toast-ui/editor';
 ```
 
 - CommonJS
 
 ```javascript
-const Editor = require("@toast-ui/editor");
+const Editor = require('@toast-ui/editor');
 ```
 
 #### Using Namespace in Browser Environment
@@ -106,15 +106,15 @@ You need to add the CSS files needed for the Editor. Import CSS files in node en
 - ES6 Modules
 
 ```javascript
-import "codemirror/lib/codemirror.css"; // Editor's Dependency Style
-import "@toast-ui/editor/dist/toastui-editor.css"; // Editor's Style
+import 'codemirror/lib/codemirror.css'; // Editor's Dependency Style
+import '@toast-ui/editor/dist/toastui-editor.css'; // Editor's Style
 ```
 
 - CommonJS
 
 ```javascript
-require("codemirror/lib/codemirror.css");
-require("@toast-ui/editor/dist/toastui-editor.css");
+require('codemirror/lib/codemirror.css');
+require('@toast-ui/editor/dist/toastui-editor.css');
 ```
 
 #### Using in Browser Environment by CDN
@@ -143,7 +143,7 @@ You can create an instance with options and call various API after creating an i
 
 ```js
 const editor = new Editor({
-  el: document.querySelector("#editor"),
+  el: document.querySelector('#editor'),
 });
 ```
 
@@ -151,10 +151,10 @@ const editor = new Editor({
 
 ```js
 const editor = new Editor({
-  el: document.querySelector("#editor"),
-  height: "600px",
-  initialEditType: "markdown",
-  previewStyle: "vertical",
+  el: document.querySelector('#editor'),
+  height: '600px',
+  initialEditType: 'markdown',
+  previewStyle: 'vertical',
 });
 
 editor.getHtml();
