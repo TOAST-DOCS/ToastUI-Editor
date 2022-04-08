@@ -1,4 +1,4 @@
-## Open Source > NHN Cloud TOAST UI Editor > Open Source Guide
+## Open Source > NHN Cloud TOAST UI Editor > 오픈 소스 사용 가이드
 
 ## 설치하기
 
