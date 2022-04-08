@@ -6,21 +6,6 @@
 
 <img src="https://user-images.githubusercontent.com/37766175/121809054-446bac80-cc96-11eb-9139-08c6d9ad2d88.png" />
 
-
-## 🚩 Table of Contents
-
-- [Packages](#-packages)
-- [Why NHN Cloud TOAST UI Editor?](#-why-toast-ui-editor)
-- [Features](#-features)
-- [Examples](#-examples)
-- [Browser Support](#-browser-support)
-- [Pull Request Steps](#-pull-request-steps)
-- [Contributing](#-contributing)
-- [NHN Cloud TOAST UI Family](#-toast-ui-family)
-- [Used By](#-used-by)
-- [License](#-license)
-
-
 ## 📦 Packages
 
 ### NHN Cloud TOAST UI Editor
