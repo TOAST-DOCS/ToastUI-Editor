@@ -5,7 +5,6 @@
 NHN Cloud TOAST UI Editor can be used by using the package manager or downloading the source directly. However, we highly recommend using the package manager.
 
 ### Via Package Manager (npm)
-
 You can conveniently install it using the commands provided by each package manager. When using npm, be sure to use it in the environment [Node.js](https://nodejs.org/en/) is installed.
 
 ```sh
@@ -33,8 +32,8 @@ NHN Cloud TOAST UI Editor is available over the CDN powered by [NHN Cloud](https
 ```html
 ...
 <body>
-  ...
-  <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+...
+<script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
 </body>
 ...
 ```
@@ -70,7 +69,7 @@ You need to add the container element where NHN Cloud TOAST UI Editor (hencefort
 ```html
 ...
 <body>
-  <div id="editor"></div>
+<div id="editor"></div>
 </body>
 ...
 ```
